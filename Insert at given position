@@ -7,8 +7,9 @@ public class Solution {
        Scanner scan=new Scanner(System.in);
         String S=scan.nextLine();
         String T=scan.nextLine();
+        int index=scan.nextInt();
         StringBuilder sb=new StringBuilder(S);
-        sb.insert(4,T);
+        sb.insert(index,T);
         System.out.println(sb);
     }
 }
