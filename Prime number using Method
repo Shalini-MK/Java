@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public void prime(int a){
+        for(int i = 2;i<a;i++){
+          if(a%i==0 && a<=1){
+               System.out.println("Not Prime");
+              return;
+          }
+    } 
+            System.out.println("Prime");                
+}
+
+    public static void main(String[] args) {
+        Solution ob=new Solution();
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        ob.prime(a);
+    }
+}
+
