@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s=scan.nextLine();
+        int count=0;
+        for(int i=0;i<s.length();i++){
+            char n=s.charAt(i);
+        if(n=='a'||n=='e'||n=='i'||n=='o'||n=='u'||n=='A'||n=='E'||n=='I'||n=='O'||n=='U')
+            count++;
+           
+        }
+      System.out.print(count);
+    }
+}
