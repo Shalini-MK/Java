@@ -1,0 +1,48 @@
+import java.io.*;
+import java.util.*;
+class Bank{
+    void getRate(){
+        System.out.println("Bank name");
+    }
+}
+class SBI extends Bank{
+    void getRate(){
+        System.out.println("6.5%");
+    }
+}
+class HDFC extends Bank{
+    void getRate(){
+        System.out.println("7.0%");
+    }
+}
+class ICICI extends Bank{
+    void getRate(){
+        System.out.println("6.8%");
+    }
+}
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        Bank b;
+        if(s.equals("SBI")){
+            b=new SBI();
+        }
+        else if(s.equals("HDFC")){
+            b=new HDFC();
+        }
+        else if(s.equals("ICICI")){
+            b=new ICICI();
+        }
+        else {
+            b=new Bank();
+        }
+        b.getRate();
+    }
+}
+
+
+
+  
