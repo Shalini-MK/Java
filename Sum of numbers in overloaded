@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+class SumCalculator{
+    int sum(int a,int b){
+        return a+b;
+    }
+    int sum(int a,int b,int c){
+        return a+b+c;
+    }
+    double sum(double a,double b){
+        return a+b;
+    }
+}
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        SumCalculator s1=new SumCalculator();
+         if(scan.hasNextInt()) {
+            int a=scan.nextInt();
+            if(scan.hasNextInt()) {
+                int b = scan.nextInt();
+                if (scan.hasNextInt()) {
+                    int c = scan.nextInt();
+                    System.out.println(s1.sum(a,b,c));
+                } 
+                else {
+                    System.out.println(s1.sum(a,b));
+                }
+            }
+        } 
+        else if (scan.hasNextDouble()) {
+            double x = scan.nextDouble();
+            double y = scan.nextDouble();
+            System.out.println(s1.sum(x, y));
+        }
+    }
+}
