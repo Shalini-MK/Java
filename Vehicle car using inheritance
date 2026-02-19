@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+class Vehicle{
+    void showBrand(String s){
+        System.out.println("Brand:"+s);
+    }
+}
+class Car extends Vehicle{
+    void showSpeed(int n){
+        System.out.println("Speed:"+n);
+    }
+}
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        Car c=new Car();
+        
+        String a=scan.nextLine();
+        int b=scan.nextInt();
+        
+        c.showBrand(a);
+        c.showSpeed(b);
+        
+        
+    }
+}
