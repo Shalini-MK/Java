@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+class Printer{
+    void display(String message){
+        System.out.println(message);
+    }
+    void display(String message,int times){
+        for(int i = 0; i < times; i++) {
+            System.out.println(message);
+        }
+        
+    }
+}
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Printer p1=new Printer();
+        Scanner scan=new Scanner(System.in);
+        String message=scan.nextLine();
+        
+        if(scan.hasNextInt()){
+            int times=scan.nextInt();
+            p1.display(message,times);
+        }
+           else{
+               p1.display(message);
+           }
+    }
+}
+
+
+
