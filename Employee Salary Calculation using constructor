@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+class Employee{
+    String name;
+    double basicSalary;
+    Employee(String n,double s){
+        name=n;
+        basicSalary=s;
+    }
+    public double calculateSalary(){
+        double hra=0.2*basicSalary;
+        double da=0.1*basicSalary;
+        double total=basicSalary+hra+da;
+        return total;
+    }
+void display(){
+    System.out.println("Name:"+name);
+    System.out.println("Total Salary:"+calculateSalary());
+    
+}
+}
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        String a=scan.nextLine();
+        double b=scan.nextDouble();
+
+        Employee s1=new Employee(a,b);
+        s1.display();
+       
+    }
+}
