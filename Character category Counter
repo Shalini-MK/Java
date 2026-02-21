@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int upper=0;
+        int lower=0;
+        int digits=0;
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(Character.isUpperCase(c)){
+                upper++;
+            }
+            else if(Character.isLowerCase(c)){
+                lower++;
+            }
+            else {
+                digits++;
+            }
+        }
+        System.out.println("Uppercase: "+upper);
+        System.out.println("Lowercase: "+lower);
+        System.out.println("Digits: "+digits);
+    }
+}
+
+
+        
+       
